@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/cars.js"></script>
+  <title>Cars Page</title>
+</head>
+<body>
+  <div class = "background">
+    <img src = "img/logo.png" class="logo">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="underlineNav">Cars</a></li>
+        <li><a href="Brands.html">Brands</a></li>
+        <li><a href="FindCar.html">Find me a car</a></li>
+        <li><a href="Compare.html">Compare</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar">
+      <form class = "search" id = "search">
+        <input type="text" placeholder="Search.." name="search" id="searchInput">
+        <button type= "submit" id="searchBtn"><img src="img/search.png"></button>
+      </form>
+      <form class = "sort">
+        <h1>Sort By:</h1>
+        <input type="radio" id="Name" name="sort" value="Name">
+        <label for="Name">Name</label><br>
+        <input type="radio" id="Year" name="sort" value="Year">
+        <label for="Year">Year</label><br>
+      </form>
+      <form class = "filters">
+        <h1>Filter By:</h1>
+        <div class="filter">
+          <h2>Car Type</h2>
+          <input type="checkbox" id="Sedan" name="filter" value="Sedan">
+          <label for="Sedan">Sedan</label><br>
+          <input type="checkbox" id="SUV" name="filter" value="SUV">
+          <label for="SUV">SUV</label><br>
+          <input type="checkbox" id="Hatchback" name="filter" value="Hatchback">
+          <label for="Hatchback">Hatchback</label><br>
+          <input type="checkbox" id="Coupe" name="filter" value="Coupe">
+          <label for="Coupe">Coupe</label><br>
+          <input type="checkbox" id="SportsCar" name="filter" value="SportsCar">
+          <label for="SportsCar">Sports Car</label><br>
+          <input type="checkbox" id="PickupTruck" name="filter" value="PickupTruck">
+          <label for="PickupTruck">Pickup Truck</label><br>
+        </div>
+        <div class="filter">
+          <h2>Transmission</h2>
+          <input type="checkbox" id="Manual" name="filter" value="Manual">
+          <label for="Manual">Manual</label><br>
+          <input type="checkbox" id="Automatic" name="filter" value="Automatic">
+          <label for="Automatic">Automatic</label><br>
+        </div>
+        <div class="filter">
+          <h2>Fuel Type</h2>
+          <input type="checkbox" id="Petrol" name="filter" value="Petrol">
+          <label for="Petrol">Petrol</label><br>
+          <input type="checkbox" id="Diesel" name="filter" value="Diesel">
+          <label for="Diesel">Diesel</label><br>
+          <input type="checkbox" id="Hybrid" name="filter" value="Hybrid">
+          <label for="Hybrid">Hybrid</label><br>
+          <input type="checkbox" id="Electric" name="filter" value="Electric">
+          <label for="Electric">Electric</label><br>
+        </div>
+        <div class="filter">
+          <h2>Number of Seats</h2>
+          <input type="checkbox" id="2" name="filter" value="2">
+          <label for="2">2</label><br>
+          <input type="checkbox" id="3" name="filter" value="3">
+          <label for="3">3</label><br>
+          <input type="checkbox" id="4" name="filter" value="4">
+          <label for="4">4</label><br>
+          <input type="checkbox" id="5" name="filter" value="5">
+          <label for="5">5</label><br>
+          <input type="checkbox" id="6" name="filter" value="6">
+          <label for="6">6</label><br>
+          <input type="checkbox" id="7" name="filter" value="7">
+          <label for="7">7</label><br>
+          <input type="checkbox" id="8" name="filter" value="8">
+          <label for="8">8</label><br>
+        </div>
+
+        <!-- <h2>Year</h2>
+        <input type="range" min="1900" max="2023" value="2023" class="slider" id="yearValue">
+        <p id = "yearValue">2023</p> -->
+      </form>
+    </div>
+    <div class = "content" id = "carContent">
+    </div>
+  </div>
+</body>
+</html>

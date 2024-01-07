@@ -1,0 +1,502 @@
+/* Timothy_Whitaker_u22744968 */
+:root
+{
+    --customPink: #ff5f5f;
+    --customBlue: #5fffea;
+    --themeColor: white;
+    --loadingColor: black;
+    --contentBackgroundDark: #5e5e5e5e;
+    --contentBackgroundLight: #ffffffb0;
+    --contentBackground: var(--contentBackgroundDark);
+    --backgroundDark: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/Chevrolet.jpg");
+    --backgroundLight: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/Audi.jpg");
+    --background: var(--backgroundDark);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.background
+{ 
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-image: var(--background);
+    background-size: cover;
+    background-position: center;
+}
+.logo
+{
+    margin-top: -5px;
+    margin-left: 20px;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+.loading
+{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--loadingColor);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading img
+{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+button
+{
+    width: 100%;
+    height: 40px;
+    background-color: var(--customPink);
+    border: 0;
+    border-radius: 5px;
+    color: var(--themeColor);
+    font-size: 16px;
+    box-shadow: 3px 3px grey;
+    cursor: pointer;
+}
+.navbar
+{
+    top: 0px;
+    padding: 25px;
+    padding-left: 220px;
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: var(--themeColor);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--customPink);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+.underlineNav::after
+{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: var(--customPink);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    
+}
+.sidebar
+{
+    color: var(--themeColor);
+    box-shadow: 5px 5px 10px var(--customPink);
+    z-index: 9;
+    margin: 10px;
+    overflow: auto;
+    width: 250px;
+    height: 85%;
+    background-color: var(--contentBackground);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    left: 25px;
+    top: 100px;
+    text-align: left;
+    justify-content: top;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h1
+{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--customPink);
+    text-underline-offset: 3px;
+    font-size: 26px;
+    padding: 5px 0;
+}
+.search
+{
+    width: auto;
+    height: 40px;
+    background-color: var(--contentBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 5px;
+    padding-right: 1px;
+    margin: 5px;
+}
+.search input
+{
+    width: 80%;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: var(--themeColor);
+}
+::placeholder
+{
+    color: var(--themeColor);
+}
+.search button img
+{
+    width: 60%;
+    height: 60%;
+}
+.search button
+{
+    border : 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--customPink);
+    box-shadow: none;
+}
+.sidebar .sort
+{
+    color: var(--themeColor);
+    width: auto;
+    height: auto;
+    max-width: 700px;
+    display: inline-block;
+    padding: 5px;
+}
+.sidebar .filters
+{
+    color: var(--themeColor);
+    width: auto;
+    height: auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.sidebar .filter
+{
+    padding-bottom: 5px;
+}
+.sidebar .filters h2
+{
+    text-decoration: underline;
+    text-decoration-color: var(--customPink);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    font-size: 20px;
+    padding: 5px 0;
+}
+.sidebar .findFilter
+{
+    width: auto;
+    height: auto;
+    max-width: 700px;
+    display: inline-block;
+    padding: 5px;
+}
+.sidebar .findFilter h2
+{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.content
+{
+    align-content: flex-start;
+    margin:10px;
+    overflow: auto;
+    top: 100px;
+    padding-left: 350px;
+    width: auto;
+    height: 85%;
+    position: absolute;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--themeColor);
+}
+.content h1
+{
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: var(--customPink);
+    text-underline-offset: 3px;
+}
+.content h2
+{
+    font-size: 15px;
+}
+.content .car
+{
+    display: flex;
+    width: 700px;
+    max-height: 500px;
+    align-items: left;
+    padding: 10px;
+    margin: 2px;
+    background-color: var(--contentBackground);
+    border-radius: 5px;
+    text-align: left;
+}
+.content .carDetails 
+{
+    flex: 1;
+    margin-right: 10px;
+    text-align: left; 
+}
+.content .car img
+{
+    object-fit: cover;
+    width: 60%;
+    height: 100%;
+}
+.contentBrands
+{
+    align-content: flex-start;
+    margin:10px;
+    overflow: auto;
+    top: 100px;
+    padding-left: 10px;
+    width: 99%;
+    height: 90%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--themeColor);
+}
+.contentBrands h1
+{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: var(--customPink);
+    text-underline-offset: 3px;
+}
+.brands
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: var(--contentBackground);
+    margin: 2px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+.brands img
+{
+    object-fit: contain;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+.contentCompare
+{
+    display: flex;
+    top: 100px;
+    padding-left: 10px;
+    width: 99%;
+    height: 85%;
+    position: absolute;
+    color: var(--themeColor);
+}
+.contentCompare .wrapper
+{
+    width: 50%;
+    background-color: var(--contentBackground);
+    margin: 2px;
+    border-radius: 5px;
+}
+.contentCompare h1
+{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: var(--customPink);
+    text-underline-offset: 3px;
+}
+.contentCompare .car
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    align-items: left;
+    text-align: left;
+}
+.contentCompare .popUpBar
+{
+    top: 150px;
+    position: fixed;
+    flex-wrap: wrap;
+    overflow: auto;
+    z-index: 10;
+    background-color: var(--contentBackground);
+    margin: 2px;
+    display: flex;
+    padding: 10px;
+    width: 49%;
+    height: 40%;
+    align-items: left;
+    text-align: left;
+}
+.contentCompare .popUp
+{
+    background-color: rgba(194, 194, 194, 0.3);
+    margin: 2px;
+    width: 200px;
+    border-radius: 5px;
+    height: 200px;
+}
+.popUp h1
+{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: var(--customPink);
+    text-underline-offset: 3px;
+}
+.contentCompare .carDetails 
+{
+    padding: 5px;
+    text-align: left; 
+}
+.contentCompare .wrapper img
+{
+    object-fit: contain;
+    width: 100%;
+    height: 60%;
+}
+.signup
+{
+    color: var(--themeColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+.signup h1
+{
+    padding-bottom: 15px;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: var(--customPink);
+    text-underline-offset: 3px;
+}
+.signup input
+{
+    width: 300px;
+    height: 40px;
+    background-color: var(--contentBackground);
+    border: #000000 2px solid;
+    border-radius: 5px;
+    color: var(--themeColor);
+    font-size: 16px;
+    box-shadow: 3px 3px var(--contentBackground);
+    margin-bottom: 8px;
+    padding : 0 10px;
+}
+.signup ::placeholder
+{
+    color: var(--themeColor);
+    
+}
+.signup h2
+{
+    color : var(--themeColor);
+    font-size: 20px;
+    padding: 15px;
+}
+.footer
+{
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+}
+.footer .theme
+{
+    width: 48px;
+    height: 48px;
+    margin-right: 1.5%;
+    margin-bottom: 0.8%;
+    object-fit: contain;
+}
+#rating-container 
+{
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: 20px;
+    
+}
+.star 
+{
+    display: inline-block;
+    color: var(--themeColor);
+    font-size: 30px;
+    cursor: auto;
+}
+#rating-container  p
+{
+    font-size: 20px;
+    cursor: auto;
+}
+.star.filled 
+{
+    color: rgb(255, 230, 0);
+}
+.star.rating
+{
+    color: #ff5f5f;
+}
+.rate
+{
+    width: 70%;
+    height: 30px;
+}

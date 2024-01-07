@@ -1,0 +1,26 @@
+.container .boxes
+{
+    justify-content: flex-start;
+    display: flex;
+}
+.container .boxes .boxbase
+{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    margin: 10px;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .boxes .box1
+{
+    border: 3px solid lightgreen;
+    box-shadow: 0px 0px 6px lightgreen;
+}
+.container .boxes .box2
+{
+    border: solid blue;
+}

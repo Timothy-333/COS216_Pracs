@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Find Car Page</title>
+</head>
+<body>
+  <div class = "background">
+    <img src = "img/logo.png" class="logo">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Cars</a></li>
+        <li><a href="Brands.html">Brands</a></li>
+        <li><a href="FindCar.html" class="underlineNav">Find me a car</a></li>
+        <li><a href="Compare.html">Compare</a></li>
+      </ul>
+    </nav>
+  <div class>
+    <form class = "sidebar">
+      <h1> 
+        Find me a car:
+      </h1>
+      <div class="findFilter">
+        <h2>Max Price?</h2>
+        <input type="text" name="maxPrice" placeholder="R" required>
+      </div>
+      <div class="findFilter">
+        <h2>Min Price?</h2>
+        <input type="text" name="minPrice" placeholder="R" required>
+      </div>
+      <div class="findFilter">
+        <h2>Brand?</h2>
+        <select name="brand" required>
+          <option></option>
+          <option value="anyBrand">Any</option>
+          <option value="volvo">Volvo</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+          <option value="bmw">BMW</option>
+          <option value="ford">Ford</option>
+          <option value="toyota">Toyota</option>
+          <option value="ferrari">Ferrari</option>
+          <option value="tesla">Tesla</option>
+      </select>
+      </div>
+      <div class="findFilter">
+        <h2>Type?</h2>
+        <select name="type" required>
+          <option></option>
+          <option value="anyType">Any</option>
+          <option value="sedan">Sedan</option>
+          <option value="hatch">Hatch</option>
+          <option value="suv">SUV</option>
+          <option value="coupe">Coupe</option>
+          <option value="sportsCar">Sports Car</option>
+          <option value="pickupTruck">Pickup Truck</option>
+        </select>
+      </div>
+      <div class="findFilter">
+        <h2>Fuel type?</h2>
+        <select name="fuel" required>
+          <option></option>
+          <option value="anyFuel">Any</option>
+          <option value="petrol">Petrol</option>
+          <option value="diesel">Diesel</option>
+          <option value="electric">Electric</option>
+          <option value="hybrid">Hybrid</option>
+        </select>
+      </div>
+      <div class="findFilter">
+        <h2>Transmission type?</h2>
+        <select name="transmission" required>
+          <option></option>
+          <option value="anyTransmission">Any</option>
+          <option value="manual">Manual</option>
+          <option value="automatic">Automatic</option>
+        </select>
+      </div>
+      <div class="findFilter">
+        <h2>Colour?</h2>
+        <select name="colour">
+          <option value="anyColour">Any</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+        </select>
+      </div>
+      <div class="findFilter">
+        <h2>Number of doors?</h2>
+        <select name="doors">
+          <option value="anyNumberDoors">Any</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="findFilter">
+        <h2>Number of seats?</h2>
+        <select name="seats">
+          <option value="anyNumberSeats">Any</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+      <div class="findFilter">
+        <h2>Max speed?</h2>
+        <input type="text" name="maxSpeed" placeholder="km/h">
+      </div>
+      <div class="findFilter">
+        <h2>Min speed?</h2>
+        <input type="text" name="minSpeed" placeholder="km/h">
+      </div>
+      <div class="findFilter">
+        <h2>Airbags?</h2>
+        <select name="airbags">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        </select>
+      </div>
+      <div class="findFilter">
+        <button type="submit">Find me a car</button>
+      </div>
+    </form>
+    <div class = "content">
+      <div class="car">
+        <div class="carDetails">
+          <h1>Toyota Camry</h1><br>
+          <h2>Year: 2022</h2>
+          <h2>Fuel: Petrol/Hybrid</h2>
+          <h2>Car Type: Sedan</h2>
+          <h2>Transmission: Automatic</h2>
+          <h2>Top Speed: 211 km/h</h2>
+        </div>
+        <img src="img/ToyotaCamry.jpg">
+      </div>
+      <div class="car">
+        <div class="carDetails">
+          <h1>Ford Mustang</h1><br>
+          <h2>Year: 2021</h2>
+          <h2>Fuel: Petrol</h2>
+          <h2>Car Type: Sports Car</h2>
+          <h2>Transmission: Manual</h2>
+          <h2>Top Speed: 250 km/h</h2>
+        </div>
+        <img src="img/Mustang.jpg">
+      </div>
+      <div class="car">
+        <div class="carDetails">
+          <h1>Toyota Hilux</h1><br>
+          <h2>Year: 2021</h2>
+          <h2>Fuel: Diesel</h2>
+          <h2>Car Type: Pickup Truck</h2>
+          <h2>Transmission: Manual</h2>
+          <h2>Top Speed: 195 km/h</h2>
+        </div>
+        <img src="img/ToyotaHilux.jpg">
+      </div>
+      <div class="car">
+        <div class="carDetails">
+          <h1>Audi R8</h1><br>
+          <h2>Year: 2023</h2>
+          <h2>Fuel: Petrol</h2>
+          <h2>Car Type: Sports Car</h2>
+          <h2>Transmission: Automatic</h2>
+          <h2>Top Speed: 324 km/h</h2>
+        </div>
+        <img src="img/AudiR8.jpg">
+      </div>
+      <div class="car">
+        <div class="carDetails">
+          <h1>Tesla Model S</h1><br>
+          <h2>Year: 2022</h2>
+          <h2>Fuel: Electric</h2>
+          <h2>Car Type: Coupe</h2>
+          <h2>Transmission: Automatic</h2>
+          <h2>Top Speed: 250 km/h</h2>
+        </div>
+        <img src="img/Tesla-Model-S.jpg">
+      </div>
+      <div class="car">
+        <div class="carDetails">
+          <h1>Ferrari 488 GTB</h1><br>
+          <h2>Year: 2023</h2>
+          <h2>Fuel: Petrol</h2>
+          <h2>Car Type: Sports Car</h2>
+          <h2>Transmission: Automatic</h2>
+          <h2>Top Speed: 330 km/h</h2>
+        </div>
+        <img src="img/Ferrari488GTB2023.jpg">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
